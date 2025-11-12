@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 // --- Fonts ---
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 // --- Variables --- 
 @use './vars';
+=======
+// --- Variables --- 
+@use './vars';
+
+// --- Fonts ---
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+>>>>>>> 0eb79e8 (feat: affichage dynamique de la liste des devises)
 
 // --- Reset ---
 * {

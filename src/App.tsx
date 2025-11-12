@@ -1,4 +1,6 @@
-import "./App.scss";
+import "./styles/App.scss";
+import currencies from "./data/currencies.ts";
+
 
 function App() {
 	return (
@@ -9,17 +11,21 @@ function App() {
 			</header>
 
 			<ul className="currencies">
+
+				{currencies.map((currency)=>
+					<li className="currency">
+					<button className="currency__button" type="button">
+						{currency.description}
+					</button>
+				</li>
+				)}
+
 				<li className="currency">
 					<button className="currency__button" type="button">
 						United States Dollar
 					</button>
 				</li>
 
-				<li className="currency">
-					<button className="currency__button" type="button">
-						Bulgarian Lev
-					</button>
-				</li>
 			</ul>
 
 			<footer className="result">
